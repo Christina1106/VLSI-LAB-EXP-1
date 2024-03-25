@@ -1,4 +1,4 @@
-# VLSI-LAB-EXPERIMENTS
+![Screenshot 2024-03-20 222815](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/2980eb82-3dc0-4516-ad8d-055f5acb3e12)# VLSI-LAB-EXPERIMENTS
 AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Xilinx ISE.
 
 APPARATUS REQUIRED: Xilinx 14.7 Spartan6 FPGA
@@ -56,6 +56,19 @@ output:
 ![Screenshot 2024-03-19 003112](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/bffa8c5b-009c-4f43-87a0-3d4207656bbf)
 
 Half Subtractor:
+program for half subtractor dataflow
+
+module half_subtractor(D,Bo,A,B);
+input A,B;
+output D,Bo;
+assign D = A^B;
+assign Bo = (~A)&B;
+endmodule
+
+output:
+![Screenshot 2024-03-20 222643](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/eac5b70c-8eff-4384-b076-65525288cadd)
+![Screenshot 2024-03-20 222815](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/7b6cdef1-072d-4fc2-9942-4b47d4e872fc)
+
 
 Full Adder:
 program for full adder gatelevel
@@ -78,8 +91,19 @@ output:
 ![Screenshot 2024-03-17 224831](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/bf065cc6-5b8f-4b94-9ad7-d80b7bdd85f4)
 ![Screenshot 2024-03-17 225003](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/ab7f39f4-942a-4595-82ad-2c730dac6580)
 
-Half Subtractor:
-program for Half Subtractor dataflow
+Full Subtractor:
+program for Full Subtractor dataflow
+
+module full_subtractor(a, b, c,D, Bout);
+input a, b, c;
+output D, Bout;
+assign D = a^b^c;
+assign Bout = (a & b) | ((a^b) & c);
+endmodule
+
+Output:
+![Screenshot 2024-03-25 011831](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/9b6b5c44-0fe5-4646-b541-7f7baf212b85)
+![Screenshot 2024-03-25 011933](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/7e942122-7332-4cba-9eff-af24eb57f4d9)
 
 
 
