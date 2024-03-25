@@ -55,6 +55,8 @@ output:
 ![Screenshot 2024-03-20 221138](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/f6dac197-af98-4c7f-a938-54e515530eb3)
 ![Screenshot 2024-03-19 003112](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/bffa8c5b-009c-4f43-87a0-3d4207656bbf)
 
+Half Subtractor:
+
 Full Adder:
 program for full adder gatelevel
 
