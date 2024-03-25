@@ -40,8 +40,46 @@ Full Subtractor:
 
 
 VERILOG CODE:
+Half Adder:
+program halfadder dataflow
 
-----Type Verilog Code
+//half adder using Dataflow modeling
+module half_adder(a,b,sum, carry);
+input a,b;
+output sum, carry; // sum and carry
+assign sum = a^b;
+assign carry = a&b;
+endmodule
+
+output:
+![Screenshot 2024-03-20 221138](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/f6dac197-af98-4c7f-a938-54e515530eb3)
+![Screenshot 2024-03-19 003112](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/bffa8c5b-009c-4f43-87a0-3d4207656bbf)
+
+Full Adder:
+program for full adder gatelevel
+
+//full adder using Gatelevel modeling
+module fulladder (sum, cout, a,b,c);
+input a,b,c;
+output sum,cout;
+wire w1,w2,w3,w4,w5;
+xor x1 (w1,a,b);
+xor x2(sum,w1,c); 
+and a1 (w2,a,b); 
+and a2(w3,b,c);
+and a3(w4,a,c);
+or o1 (w5,w2,w3); 
+or o2(cout, w5,w4);
+endmodule
+
+output:
+![Screenshot 2024-03-17 224831](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/bf065cc6-5b8f-4b94-9ad7-d80b7bdd85f4)
+![Screenshot 2024-03-17 225003](https://github.com/Christina1106/VLSI-LAB-EXP-1/assets/161043650/ab7f39f4-942a-4595-82ad-2c730dac6580)
+
+Half Subtractor:
+program for Half Subtractor dataflow
+
+
 
 OUTPUT:
 
