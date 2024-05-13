@@ -278,3 +278,16 @@ Elaborated Design:
 
 
 Simulation:
+
+
+
+![image](https://github.com/Nagarajan2003/VLSI-LAB-EXP-1/assets/164840481/f882d103-802e-46df-bf59-d6a062f495c5)
+
+
+
+
+
+
+
+RESULT : The simulation and synthesis of Logic Gates, Adders and Subtractor using Vivadoo Software are successfully verified
+
